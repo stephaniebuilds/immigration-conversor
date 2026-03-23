@@ -6,6 +6,12 @@ A dynamic interactive simulator developed to help future immigrants calculate th
 
 🚀 **[Click here to access the official simulator](https://stephaniebuilds.github.io/immigration-conversor/)**
 
+
+
+
+https://github.com/user-attachments/assets/ea18762e-4321-4957-865d-8477208a7cc6
+
+
 ---
 
 ## ✨ Features
