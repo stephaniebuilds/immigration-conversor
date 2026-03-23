@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Canadian dream</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                Immigration specialist
+            </div>
+
+            <div class="header-right-group">
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="active">Calculators</a></li>
+                    </ul>
+                </nav>
+
+                <div class="cta-header">
+                    <a href="PT/index.html" style="text-decoration: none;">
+                    <button class="apply-btn">PT</button>
+                </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="first-box">
+        <div class="left-box">
+            <h1>
+                The <br /><span class="text-primary">Canadian Dream.</span>
+            </h1>
+        </div>
+        <div class="right-box">
+            <img src="assets/flag2.gif" alt="bandeira do canadá">
+        </div>
+    </div>
+
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <div>
+                <h2>Required Funds Calculator</h2>
+                <p>Estimate your total required savings according to immigration program.</p>
+            </div>
+            <div class="header-display">
+                <span id="header-info">Exchange Rate: 1 CAD = 3.65 BRL</span>
+            </div>
+        </div>
+
+
+        <div class="main-layout">
+            <div class="inputs-section-family">
+                <label for="familySize">Family Size</label>
+                <input type="number" id="familySize" value="2" min="1" max="7" oninput="calculate()">
+                <p class="hint">Include yourself, spouse, and dependent children.</p>
+            </div>
+
+            <div class="cards-section">
+                <div class="card express">
+                    <span class="program-name express">EXPRESS ENTRY</span>
+                    <h3 id="val-express">CAD$ 0</h3>
+                    <span class="equiv-label">CAD Required</span>
+                    <p id="brl-express">R$ 0</p>
+                    <span class="equiv-label">BRL Equivalent</span>
+                </div>
+
+                <div class="card atlantic">
+                    <span class="program-name atlantic">ATLANTIC AIP</span>
+                    <h3 id="val-atlantic">CAD$ 0</h3>
+                    <span class="equiv-label">CAD Required</span>
+                    <p id="brl-atlantic">R$ 0</p>
+                    <span class="equiv-label">BRL Equivalent</span>
+                </div>
+
+                <div class="card rural">
+                    <span class="program-name rural">RURAL PILOT</span>
+                    <h3 id="val-rural">CAD$ 0</h3>
+                    <span class="equiv-label">CAD Required</span>
+                    <p id="brl-rural">R$ 0</p>
+                    <span class="equiv-label">BRL Equivalent</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <div>
+                <h2>How much do you already have</h2>
+                <p>Estimate how much you already have to achieve your dream.</p>
+            </div>
+            <div class="header-display">
+                <span id="exchange-info">Exchange Rate: Loading ...</span>
+            </div>
+        </div>
+
+
+        <div class="main-layout">
+            <div class="inputs-section">
+                <div class="input-group1">
+                    <label for="currentSavingsreal" class="label-with-flag">Your Current Savings (BRL)
+                        <img class="brazil" src="./assets/brasil.png" alt="brazilian flag">
+                    </label>
+                    <div class="currency-input-wrapper">
+                        <input type="number" id="currentSavingsreal" placeholder="R$ 1.000,00">
+                    </div>
+                </div>
+        
+                <button class="convert-button">Convert</button>
+        
+                <div class="input-group2">
+                    <label for="currentSavingsdollar" class="label-with-flag">Your Savings in CAD$
+                        <img class="canada" src="./assets/canadian flag.png" alt="canadian flag">
+                    </label>
+                    <div class="currency-input-wrapper">
+                        <input id="currentSavingsdollar" placeholder="CAD$ 300,00" readonly>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <h3 class="footer-brand">Immigration specialist</h3>
+                <p class="footer-copyright">
+                    © 2026 Immigration specialist of Canada - All rights reserved.
+                </p>
+            </div>
+        </footer>
+    
+
+    
+    <script src="./script.js"></script>
+</body>
+
+</html>
